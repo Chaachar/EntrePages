@@ -1,7 +1,7 @@
 # README - Projet EntrePages
 
 *Dernière mise à jour :* 03/07/2026
-*Version :* 0.1
+*Version :* v0.1.0
 *Statut :* en cours
 
 ## Introduction
