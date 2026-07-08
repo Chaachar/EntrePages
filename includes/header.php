@@ -1,8 +1,13 @@
 <header>
-    <div>
-        <img src="assets/img/EP_logo.png" alt="logo EntrePages">
-        <h1>EntrePages</h1>
-        <p><em>Votre bibliothèque ouverte aux autres</em></p>
+    <div class="brand">
+        <div class="logo">
+            <img src="assets/img/EP_logo.png" alt="logo EntrePages">
+        </div>
+        <div class="brand-text">
+            <h1>EntrePages</h1>
+            <p><em>Votre bibliothèque ouverte aux autres</em></p>
+        </div>
+        
     </div>
 
     <nav>

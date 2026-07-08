@@ -1,0 +1,30 @@
+header {
+    background-color: var(--color-livre);
+    display :flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 1.5rem 3rem;
+}
+.brand {
+    display :flex;
+    padding-left : 2rem;
+}
+.logo img{
+    width : 12rem;
+}
+.brand-text{
+    display : flex;
+    flex-direction:column;
+
+}
+
+nav ul{
+    display : flex ;
+    gap : 2rem;
+    list-style : none;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--color-text);
+}

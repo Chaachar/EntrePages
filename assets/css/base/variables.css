@@ -1,0 +1,38 @@
+:root{
+
+/* ========================
+        Couleurs 
+=========================== */
+    --color-livre : #eadebf;
+    --color-profil : #788e7e;
+    --color-button : #c89a84;
+    --color-background : #ffffff;
+    --color-text : #000000;
+    --color-border : #c89a84; 
+
+/* ========================
+        Typographie 
+=========================== */
+
+    --font-title : "Merriweather", serif;
+    --font-body : "Elms Sans", sans-serif;
+
+/* ========================
+        Espacement 
+=========================== */
+    
+    --space-card : 1.25rem;
+    --space-section : 3rem;
+    --space-article : 2rem;
+
+/* ========================
+        Bordure 
+=========================== */
+    --radius: 0.75rem;
+
+/* ========================
+        Transitions 
+=========================== */ 
+    --transition-fast : 0.2s ease;
+    --transition-normal : 0.3s ease; 
+}
