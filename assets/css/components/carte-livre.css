@@ -1,0 +1,42 @@
+.book{
+    display : flex;
+    align-items: center;
+    background-color: var(--color-livre);
+    color : var(--color-text);
+    border : 0.1rem solid var(--color-border);
+    border-radius: var(--radius);
+    transition: var(--transition-fast);
+    max-width: 40rem;
+}
+.book:hover{
+    transform : translateY(-0.5rem);
+}
+.book-img{
+    padding-right : 2rem;
+    padding-left : 1rem;
+}
+.book-cover{
+    width: 13rem;
+}
+.book-info{
+    display : flex;
+    flex-direction: column;
+    padding-right: 0.5rem;
+}
+.book-title{
+    margin :0;
+    margin-top : 1rem;
+    margin-bottom : 0.2rem;
+}
+.book-author{
+    margin:0;
+    margin-bottom : 1rem;
+}
+.book-resume{
+    margin:0;
+    text-align: justify;
+}
+.book-add-by{
+    text-align : right;
+    font-style: italic;
+}

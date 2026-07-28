@@ -3,41 +3,51 @@
 
 <!-- Projet : EntrePages
 Nom fichier : index.php
-Dernière mise à jour : 07.07.26
-version v0.1.0
+Dernière mise à jour : 27.07.26
+version v0.1.1
 -->
     
-    <?php include 'includes/head.php'; ?>
+    <?php require 'includes/head.php'; ?>
     
     <body>
-        <?php include 'includes/header.php';?>
+        <?php require 'includes/header.php';?>
 
         <main>
-            <section>
-                <h2>Présentation</h2>
-                <p> C'est une communauté de lecteurs qui partagent leurs livres et leurs expériences de lecture. Vous trouverez les fonctionnalités suivantes :</p>
-                <img src="assets/img/X" alt="bibliothèque">
-                    <ul>
-                        <li>Ajouter un livre</li>
-                        <li>Partager votre bibliothèque</li>
-                        <li>Emprunter ceux des autres</li>
-                    </ul>
-            </section>
+            <div class="hero">
+                <section>
+                    <h2 class="presentation-h2">Présentation</h2>
+                    <div class="presentation-content">
+                        <div class="presentation-text">
+                            <p class="presentation-text-p"> C'est une communauté de lecteurs qui partagent leurs livres et leurs expériences de lecture. Vous trouverez les fonctionnalités suivantes :</p>
+                            <ul class="presentation-text-ul">
+                                <li>Ajouter un livre</li>
+                                <li>Partager votre bibliothèque</li>
+                                <li>Emprunter ceux des autres</li>
+                            </ul>
+                        </div>
 
-            <section>
-                <h2>Découvrez un profil utilisateur</h2>
-                <?php include'includes/profil_utilisateur.php'; ?>
-            </section>
+                        <div class="presentation-img">
+                            <img class="presentation-img"src="assets/img/bibli_a.jpg" alt="bibliothèque"> 
+                        </div>
+                    </div>
+                </section>
+                <section class="presentation-profil">
+                    <h2 class="presentation-profil-titre">Découvrez un profil utilisateur</h2>
+                    <?php require 'includes/profil_utilisateur.php'; ?>
+                </section>
+            </div>
 
-            <section>
+            <section class="book-added">
                 <h2>Les derniers livres ajoutés</h2>
-                <?php include 'includes/carte_livre.php'; ?>
-                <?php include 'includes/carte_livre.php'; ?>
-                <?php include 'includes/carte_livre.php'; ?>
+                <div class="book-list">
+                <?php require 'includes/carte_livre.php'; ?>
+                <?php require 'includes/carte_livre.php'; ?>
+                <?php require 'includes/carte_livre.php'; ?>
+                </div>
             </section>
         </main>
 
-        <?php include 'includes/footer.php'; ?>
+        <?php require 'includes/footer.php'; ?>
     </body>
     
 </html>

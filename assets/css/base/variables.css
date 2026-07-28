@@ -5,10 +5,12 @@
 =========================== */
     --color-livre : #eadebf;
     --color-profil : #788e7e;
+    --color-profil-transparent : #788e7e82;
     --color-button : #c89a84;
     --color-background : #ffffff;
+    --color-background : #ffffff66;
     --color-text : #000000;
-    --color-border : #c89a84; 
+    --color-border : #ad8175; 
 
 /* ========================
         Typographie 
@@ -21,18 +23,18 @@
         Espacement 
 =========================== */
     
-    --space-card : 1.25rem;
+    --space-card : 0.5rem;
     --space-section : 3rem;
     --space-article : 2rem;
 
 /* ========================
         Bordure 
 =========================== */
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
 /* ========================
         Transitions 
 =========================== */ 
-    --transition-fast : 0.2s ease;
-    --transition-normal : 0.3s ease; 
+    --transition-fast : 0.1s ease;
+    --transition-normal : 0.5s ease; 
 }

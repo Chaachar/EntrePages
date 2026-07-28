@@ -1,0 +1,18 @@
+.btn{
+    display: inline-block;
+    border: 0.2rem solid var(--color-button);
+    border-radius : 0.5rem;
+    padding : 0.5rem;
+    color : var(--color-text);
+    background-color : transparent;
+    transition: var(--transition-normal) ;
+}
+.btn:hover{
+    display: inline-block;
+    transform : translateY(-0.5rem);
+    box-shadow: 0.2rem 0.2rem 0rem #ad8175;
+    border-radius: 0.8rem;
+    background-color: var(--color-button);
+    color : var(--color-text);
+}
+
