@@ -6,7 +6,7 @@ Nom fichier : index.php
 Dernière mise à jour : 27.07.26
 version v0.1.1
 -->
-    
+    <?php require_once 'config/database.php'; ?>
     <?php require 'includes/head.php'; ?>
     
     <body>
@@ -40,9 +40,14 @@ version v0.1.1
             <section class="book-added">
                 <h2>Les derniers livres ajoutés</h2>
                 <div class="book-list">
-                <?php require 'includes/carte_livre.php'; ?>
-                <?php require 'includes/carte_livre.php'; ?>
-                <?php require 'includes/carte_livre.php'; ?>
+                    <?php $resultat=$pdo->query("SELECT * FROM exemplaire ORDER BY id_exemplaire DESC LIMIT 3");
+                    $exemplaires = $resultat->fetchAll(PDO::FETCH_ASSOC);
+                    if (empty($exemplaires)){
+                        echo "<p>Aucun livre n'a encore été ajouté.</p>";
+                    };
+                    foreach($exemplaires as $exemplaire){
+                        require 'includes/carte_livre.php';
+                    }; ?>
                 </div>
             </section>
         </main>
