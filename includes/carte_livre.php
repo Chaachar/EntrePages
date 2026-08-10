@@ -1,6 +1,6 @@
 <article class="book"> 
     <div class="book-img">
-        <img class="book-cover" src="assets/img/demo_livre.png" alt="couverture du livre">
+        <img class="book-cover" src="<?= BASE_URL ?>assets/img/demo_livre.png" alt="couverture du livre">
     </div>
 
     <div class="book-info">

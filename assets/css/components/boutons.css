@@ -16,3 +16,15 @@
     color : var(--color-text);
 }
 
+.btn-1{
+    display: inline-block;
+    border: 0.1rem solid var(--color-button);
+    border-radius : 0.2rem;
+    padding : 0.2rem;
+    color : var(--color-text);
+    background-color : var(--color-background);
+    transition: var(--transition-normal) ;
+    margin-top: 0.5rem;
+    font: var(--font-body) ;
+}
+

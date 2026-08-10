@@ -3,10 +3,10 @@
 
 <!-- Projet : EntrePages
 Nom fichier : index.php
-Dernière mise à jour : 27.07.26
-version v0.1.1
+Dernière mise à jour : 07.08.26
+version v0.1.3
 -->
-    <?php require_once 'config/database.php'; ?>
+    <?php require_once 'config/init.php';?>
     <?php require 'includes/head.php'; ?>
     
     <body>
@@ -27,13 +27,13 @@ version v0.1.1
                         </div>
 
                         <div class="presentation-img">
-                            <img class="presentation-img"src="assets/img/bibli_a.jpg" alt="bibliothèque"> 
+                            <img class="presentation-img" src="<?= BASE_URL ?>assets/img/bibli_a.jpg" alt="bibliothèque"> 
                         </div>
                     </div>
                 </section>
                 <section class="presentation-profil">
                     <h2 class="presentation-profil-titre">Découvrez un profil utilisateur</h2>
-                    <?php require 'includes/profil_utilisateur.php'; ?>
+                    <?php require 'includes/carte_utilisateur.php'; ?>
                 </section>
             </div>
 

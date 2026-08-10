@@ -1,5 +1,6 @@
+
 <article class="profil">
-        <img class="profil-photo" src="assets/img/demo_photo_profil.jpg"  alt="photo profil de Chacha">
+        <img class="profil-photo" src="<?= BASE_URL ?>assets/img/demo_photo_profil.jpg"  alt="photo profil de Chacha">
         <h3 class="profil-pseudo"> Chacha</h3>
         <p class="profil-description"> L'envie de discuter et de se prêter des livres </p>
         <p class="profil-nb-livres"> Bibliothèque : 15</p>

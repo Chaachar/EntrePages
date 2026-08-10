@@ -1,7 +1,6 @@
 /* ==========================
         Base 
 ============================= */
-
 @import url("base/reset.css");
 @import url("base/variables.css");
 @import url("base/typography.css");
@@ -29,4 +28,7 @@
 @import url("pages/accueil.css");
 @import url("pages/catalogue.css");
 @import url("pages/connexion.css");
+@import url("pages/ajouter_livre.css");
+@import url("pages/deconnexion.css");
+@import url("pages/inscription.css");
 @import url("pages/profil.css");
