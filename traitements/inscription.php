@@ -26,7 +26,7 @@ if(empty($pseudo)){
 }
 elseif(!preg_match('/^[0-9\p{L}_-]+$/u',$pseudo)){
     $erreurs[]="Le pseudo n'est pas valide.";
-    }
+}
 
 if(empty($email)){
     $erreurs[]="L'adresse mail est obligatoire.";

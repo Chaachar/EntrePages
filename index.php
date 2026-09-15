@@ -3,12 +3,16 @@
 
 <!-- Projet : EntrePages
 Nom fichier : index.php
-Dernière mise à jour : 07.08.26
-version v0.1.3
+Dernière mise à jour : 
+version v0.1.4
 -->
-    <?php require_once 'config/init.php';?>
+    <?php require_once 'config/init.php';
+    if (isset($_SESSION["id_utilisateur"])) {
+    header("Location: pages/profil.php");
+    exit;
+    }?>
     <?php require 'includes/head.php'; ?>
-    
+
     <body>
         <?php require 'includes/header.php';?>
 
@@ -33,7 +37,7 @@ version v0.1.3
                 </section>
                 <section class="presentation-profil">
                     <h2 class="presentation-profil-titre">Découvrez un profil utilisateur</h2>
-                    <?php require 'includes/carte_utilisateur.php'; ?>
+                    <?php require 'includes/carte_utilisateur_accueil.php'; ?>
                 </section>
             </div>
 

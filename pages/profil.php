@@ -10,7 +10,37 @@
 <?php require '../includes/head.php'; ?>
 <body>
     <?php require '../includes/header.php';?>
-    
+    <div class="page-profil">
+        <section class="profil">
+            <h2> Mon profil </h2>
+            <?php require '../includes/carte_utilisateur.php';?>
+        </section>
+        <section class="bibliotheque">
+            <h2> Bibliothèque commune</h2>
+            <nav>
+                <a href="<?= BASE_URL ?>pages/ajouter_livre.php" class="btn-1">Ajouter un livre</a>
+            </nav>
+        </section>
+        <div class="recherche-livre">
+            <section class="recherche">
+                <h2> Recherche dans la bibliothèque commune</h2>
+                <form action="../traitements/recherche_livre.php" method="get">
+                    <label class="inscription-label">Par Titre</label>  
+                    <input type="text" class="inscription-champ" name="titre" required>
+                    <button type="submit" class="btn-1" > Rechercher </button>
+                </form> 
+            </section>
+            <section class="book-added">
+                <h2> Livre sélectionné </h2>
+                <?php //require '../includes/carte_livre.php';?>
+                <nav>
+                    <a href="<?= BASE_URL ?>pages/demande_emprunt.php" class="btn-1">Emprunter</a>
+                </nav>
+            </section>
+                
+        </div>
+    </div>
+
     <?php require '../includes/footer.php'; ?>
 
 </body>

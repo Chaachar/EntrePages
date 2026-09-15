@@ -23,8 +23,12 @@
     padding : 0.2rem;
     color : var(--color-text);
     background-color : var(--color-background);
-    transition: var(--transition-normal) ;
     margin-top: 0.5rem;
     font: var(--font-body) ;
+    transition: var(--transition-fast) ;
 }
-
+.btn-1:hover{
+    border-radius: 0.1rem;
+    background-color: var(--color-button);
+    color : var(--color-text);
+}

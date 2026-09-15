@@ -1,0 +1,31 @@
+.modification-page{
+    display: flex;
+    gap : 5rem;
+    justify-content: center;
+}
+.modif-titre{
+    text-align: center;
+}
+.modification{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin :1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    border: 0.1rem solid var(--color-profil);
+    background-color: var(--color-profil-transparent);
+    border-radius : 1.5rem;
+    max-width : 17rem;
+}
+.modification-champ{
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    height: 4rem;
+}
+.btn-validation{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,21 @@
+.page-profil{
+    display: flex;
+    margin-top:1rem;
+    margin-left:2rem;
+    justify-content: space-between;
+}
+
+.bibliotheque{
+    display : flex;
+}
+.recherche-livre{
+    display : flex;
+    flex-direction: column;
+    max-width: 20rem;
+    margin-right: 2rem;
+}
+.recherche{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

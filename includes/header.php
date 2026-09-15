@@ -11,9 +11,14 @@
         
     </div>
 
-<?php if($page === "deconnexion.php"):?>
+<?php if($page === "deconnexion.php" || $page === "demande_emprunt.php"):?>
+<?php elseif ($page === "modification_profil.php"):?>
+    <nav>
+        <a href="<?= BASE_URL ?>pages/profil.php" class="btn">Mon profil</a>
+    </nav>
 <?php elseif (isset($_SESSION["id_utilisateur"])):?>
     <nav>
+        <a href="<?= BASE_URL ?>pages/modification_profil.php" class="btn">Modifier mon profil</a>
         <a href="<?= BASE_URL ?>pages/deconnexion.php" class="btn">Déconnexion</a>
     </nav>
 <?php elseif($page === "inscription.php"):?>
