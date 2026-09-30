@@ -29,3 +29,20 @@
     display: flex;
     justify-content: center;
 }
+.bloc-messages{
+/* classe présente dans page/modification_profil.php, page/profil.php pour succès ajout de livres*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    border : 0.1rem solid #cecece66;
+    background-color: #c6e5b124;
+    max-width: 17rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+.message-m{
+    margin:0;
+    margin :0.5rem;
+}

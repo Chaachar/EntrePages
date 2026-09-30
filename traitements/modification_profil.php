@@ -4,6 +4,7 @@ $id_use=$_SESSION["id_utilisateur"];
 $modification=[];
 $modification_sql=[];
 $erreurs=[];
+$messages=[];
 $champs_autorises=["nom","prenom","pseudo","email","mot_de_passe","description","citation"];
 foreach( $_POST as $key => $value){
     if(in_array($key,$champs_autorises)){  
@@ -74,8 +75,8 @@ if(empty($erreurs)){
     $parametres[":id_utilisateur"]=$id_use;
     try{
         $requete->execute($parametres);  
-        $erreurs[]="Les modifications ont bien été prises en compte !";
-        $_SESSION["erreurs"]=$erreurs;
+        $messages[]="Les modifications ont bien été prises en compte !";
+        $_SESSION["messages"]=$messages;
         header("location: ../pages/modification_profil.php");
         exit;
     } catch(PDOException $e){

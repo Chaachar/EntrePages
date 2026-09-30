@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     margin :0 auto;
+    margin-top: 1rem;
     border: 0.2rem solid var(--color-profil);
     background-color: var(--color-profil-transparent);
     border-radius : 1.5rem;

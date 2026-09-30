@@ -7,18 +7,28 @@
     exit;
     } ?>
 <?php $erreurs=$_SESSION["erreurs"] ?? [];
-unset($_SESSION["erreurs"]);?>
+    $messages=$_SESSION["messages"] ?? [];
+unset($_SESSION["erreurs"]);
+unset($_SESSION["messages"]);?>
 
 <?php require '../includes/head.php'; ?>
 <body>
     <?php require '../includes/header.php';?>
     <?php if(!empty($erreurs)): ?>
-            <div class="bloc-erreurs">
-                <?php foreach($erreurs as $erreur): ?>
-                    <p class="erreurs-m"><?= htmlspecialchars($erreur) ?></p>
+        <div class="bloc-erreurs">
+            <?php foreach($erreurs as $erreur): ?>
+                <p class="erreurs-m"><?= htmlspecialchars($erreur) ?></p>
                 <?php endforeach;?>
             </div>
-        <?php endif;?>
+    <?php endif?>
+    <?php if(!empty($messages)):?>
+        <div class="bloc-messages">
+            <?php foreach($messages as $message): ?>
+                <p class="message-m"><?= htmlspecialchars($message) ?></p>
+            <?php endforeach;?>
+        </div>
+    <?php endif;?>
+
     <div class="modification-page">
     <section class="modification">
         <h3 class="modif-titre"> Mes informations privées</h2>
@@ -47,7 +57,7 @@ unset($_SESSION["erreurs"]);?>
             <input type="text" class="modification-champ" name="citation">
 
             <label class="inscription-label">Une photo</label>
-                <input type="file" class="inscription-champ-photo" name="photo" enctype="multipart/form-data">
+            <input type="file" class="inscription-champ-photo" name="photo" enctype="multipart/form-data">
     </section>
     </div>
             <div class="btn-validation"><button type="submit" class="btn-1" > Je modifie </button></div>

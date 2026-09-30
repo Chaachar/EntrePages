@@ -12,7 +12,7 @@
     </div>
 
 <?php if($page === "deconnexion.php" || $page === "demande_emprunt.php"):?>
-<?php elseif ($page === "modification_profil.php"):?>
+<?php elseif ($page === "modification_profil.php"||$page==="ajouter_livre.php"):?>
     <nav>
         <a href="<?= BASE_URL ?>pages/profil.php" class="btn">Mon profil</a>
     </nav>

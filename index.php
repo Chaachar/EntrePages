@@ -44,12 +44,12 @@ version v0.1.4
             <section class="book-added">
                 <h2>Les derniers livres ajoutés</h2>
                 <div class="book-list">
-                    <?php $resultat=$pdo->query("SELECT * FROM exemplaire ORDER BY id_exemplaire DESC LIMIT 3");
-                    $exemplaires = $resultat->fetchAll(PDO::FETCH_ASSOC);
-                    if (empty($exemplaires)){
+                    <?php $resultat=$pdo->query("SELECT * FROM livre ORDER BY isbn DESC LIMIT 3");
+                    $livres = $resultat->fetchAll(PDO::FETCH_ASSOC);
+                    if (empty($livres)){
                         echo "<p>Aucun livre n'a encore été ajouté.</p>";
                     };
-                    foreach($exemplaires as $exemplaire){
+                    foreach($livres as $livre){
                         require 'includes/carte_livre.php';
                     }; ?>
                 </div>

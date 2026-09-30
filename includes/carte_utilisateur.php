@@ -16,7 +16,7 @@
         <?php if(empty($description)): ?>
                 <p>Il n'y pas encore de description.</p> 
         <?php else: ?>
-                <p> <p class="profil-description"> <?php echo $description?> </p></p>
+                <p class="profil-description"> <?php echo $description?> </p>
         <?php endif ?>
         
         <p class="profil-nb-livres"> Bibliothèque : 15</p>
